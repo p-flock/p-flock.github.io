@@ -101,3 +101,16 @@ map: hover {
 		opacity: 1.0;
 }
 }
+
+#footer-content {
+	font-weight: bold;
+	opacity: 0.5;
+	
+}
+
+#footer-content:hover {
+	color: rgba(255,0,0,0.5);
+	font-weight: bold;
+	opacity: 0.5;
+}
+
