@@ -114,9 +114,10 @@ map: hover {
 	opacity: 0.5;
 }
 #footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
+	text-align: center;
+       	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	margin-top: -3em;
 }
