@@ -108,8 +108,9 @@ map: hover {
 	
 }
 
-#footer-content:hover {
-	 padding-bottom: 3em;
+#footer-content:hover {a
+	text-align: center;
+	padding-bottom: 3em;
 	color: rgba(255,0,0,0.5);
 	font-weight: bold;
 	opacity: 0.5;
