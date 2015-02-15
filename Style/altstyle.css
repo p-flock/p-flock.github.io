@@ -132,6 +132,9 @@ map: hover {
 	font-weight: bold;
 	opacity: 0.5;
 }
+#ytplayer {
+    text-align: center;
+}
 #footer {
 	text-align: center;
        	clear: both;
