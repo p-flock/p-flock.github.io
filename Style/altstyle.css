@@ -133,8 +133,8 @@ map: hover {
 	opacity: 0.5;
 }
 #ytplayer {
-    width: 390px;
-    height: 640px; 
+    width: 640px;
+    height: 390px; 
 
     position: absolute; 
     top: 0; right: 0; 
