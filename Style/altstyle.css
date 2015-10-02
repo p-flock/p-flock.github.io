@@ -69,13 +69,15 @@ h3 {
 	text-decoration: none;
 	color: rgba(0, 0, 255, 0.3);
 	letter-spacing: -10px;
+    transition: all .13s linear;
+    -webkit-transition: all .13s linear;
 }
 
 #twitter-link:hover {
 	color: rgba(255, 0, 0, 0.4);
 	letter-spacing: -0px;
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
+    transition: all .13s linear;
+    -webkit-transition: all .13s linear;
 }
 
 #twitter-link:active {
@@ -107,11 +109,15 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	opacity: 0.3;
+    transition: all .12s linear;
+    -webkit-transition: all .12s linear;
 
 }
 
 #platypus:hover {
   	opacity: 1.0;
+    transition: all .12s linear;
+    -webkit-transition: all .12s linear;
 
 }
 
@@ -121,6 +127,45 @@ map: hover {
 }
 }
 
+.terminal {
+    color: lime;
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+
+}
+/*.typing*/
+/*{*/
+    /*color: black;*/
+    /*font-family: "Courier";*/
+    /*font-size: 20px;*/
+    /*margin: 10px 0 0 10px;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*width: 30em;*/
+    /*animation: type 4s steps(60, end);*/
+    /*width: 30em;*/
+/*}*/
+
+/*.text-prompt {*/
+    /*animation: blink 1s infinite;*/
+/*}*/
+/*@keyframes type{*/
+  /*from { width: 0; }*/
+/*}*/
+
+/*@keyframes type2{*/
+  /*0%{width: 0;}*/
+  /*50%{width: 0;}*/
+  /*100%{ width: 100; }*/
+/*}*/
+
+/*@keyframes blink{*/
+  /*to{opacity: .0;}*/
+/*}*/
 #footer-content {
 	font-weight: bold;
 	opacity: 0.5;
