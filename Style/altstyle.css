@@ -103,6 +103,15 @@ h3 {
 	font-style: italic;
 }
 
+#portrait {
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
 #platypus {
 	opacity: 0.3;
 	display: block;
