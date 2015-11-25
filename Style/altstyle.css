@@ -67,17 +67,17 @@ h3 {
 
 #twitter-link {
 	text-decoration: none;
-	color: rgba(0, 0, 255, 0.3);
-	letter-spacing: -10px;
-    transition: all .13s linear;
-    -webkit-transition: all .13s linear;
+	color: rgba(0, 0, 255, 0.5);
+	/*letter-spacing: -10px;*/
+    /*transition: all .13s linear;*/
+    /*-webkit-transition: all .13s linear;*/
 }
 
 #twitter-link:hover {
 	color: rgba(255, 0, 0, 0.4);
-	letter-spacing: -0px;
-    transition: all .13s linear;
-    -webkit-transition: all .13s linear;
+	/*letter-spacing: -0px;*/
+    /*transition: all .13s linear;*/
+    /*-webkit-transiton: all .13s linear;*/
 }
 
 #twitter-link:active {
@@ -112,16 +112,16 @@ h3 {
 	margin-right: auto;
 
 }
-#platypus {
-	opacity: 0.3;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.3;
-    transition: all .12s linear;
-    -webkit-transition: all .12s linear;
+/*#platypus {*/
+	/*opacity: 0.3;*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*opacity: 0.3;*/
+    /*transition: all .12s linear;*/
+    /*-webkit-transition: all .12s linear;*/
 
-}
+/*}*/
 
 #platypus:hover {
   	opacity: 1.0;
@@ -136,45 +136,17 @@ map: hover {
 }
 }
 
-.terminal {
-    color: lime;
-    font-family: "Courier";
-    font-size: 20px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30em;
-
-}
-/*.typing*/
-/*{*/
-    /*color: black;*/
+/*.terminal {*/
+    /*color: lime;*/
     /*font-family: "Courier";*/
     /*font-size: 20px;*/
     /*margin: 10px 0 0 10px;*/
     /*white-space: nowrap;*/
     /*overflow: hidden;*/
     /*width: 30em;*/
-    /*animation: type 4s steps(60, end);*/
-    /*width: 30em;*/
+
 /*}*/
 
-/*.text-prompt {*/
-    /*animation: blink 1s infinite;*/
-/*}*/
-/*@keyframes type{*/
-  /*from { width: 0; }*/
-/*}*/
-
-/*@keyframes type2{*/
-  /*0%{width: 0;}*/
-  /*50%{width: 0;}*/
-  /*100%{ width: 100; }*/
-/*}*/
-
-/*@keyframes blink{*/
-  /*to{opacity: .0;}*/
-/*}*/
 #footer-content {
 	font-weight: bold;
 	opacity: 0.5;
@@ -196,6 +168,75 @@ map: hover {
     height: 3em;
     margin-top: -3em;
 }
+#first_page {
+    height: 100vh;
+}
 html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }
 
+
+.chart {
+    /*fill-opcaity: 0.6;*/
+    /*fill: steelblue;*/
+    /*display: inline-block;*/
+    float: left;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.chart text {
+  fill: rgba(0,0,0,0.5);
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.remaining_amt {
+    fill: red;
+}
+
+.axis text {
+  font: 10px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+
+rect {
+    /*fill-opcacity: 0.2;*/
+    fill: rgba(255,0,0,0.3);
+
+}
+.bar {
+    fill: rgba(255, 0, 0, 0.5);
+}
+
+.bar:hover{
+    fill: rgba(255, 0, 0, 1);
+}
+#chart_title {
+    opacity: 0.5;
+}
+#stats {
+    top-margin: 50%;
+    float: left;
+    /*display: inline-block;*/
+}
+.stat_text {
+    opacity: 0.5;
+    /*font: 90px;*/
+}
+#caffeine {
+    text-align: center;
+}
+#Current_mg, #Average_mg {
+    font-weight: bold;
+    color: rgba(0,0, 255, 1);
+    opacity: 0.5;
+}

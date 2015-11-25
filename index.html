@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Peter Flockhart The Website</title>
-		<link rel="stylesheet" type="text/css" href="./Style/altstyle.css" />
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kite+One">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-        <script src="coffeelog.js"></script>
-        <script src="pfuma.js"></script>
+<head>
+<title>Peter Flockhart The Website</title>
+<link rel="stylesheet" type="text/css" href="./Style/altstyle.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kite+One">
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+<script src="coffeelog.js"></script>
+<script src="pfuma.js"></script>
 
-	</head>
+</head>
 
 <body>
+<div id="first_page">
     <div id="header">
-    <div id="nav">
-        <ul>
-            <li><a class ="link" href="https://www.github.com/p-flock">Github</a>
-            <li><a class ="link" href="/gif-charades">Gif Charades</a>
-            <li><a class ="link" href="/files/Peter-Flockhart-Resume-Oct-2015.pdf" download>Resume</a>
-        </ul>
+        <div id="nav">
+            <ul>
+                <li><a class ="link" href="https://www.github.com/p-flock">Github</a>
+                <li><a class ="link" href="/gif-charades">Gif Charades</a>
+                <li><a class ="link" href="/files/Peter-Flockhart-Resume-Oct-2015.pdf" download>Resume</a>
+            </ul>
+        </div>
     </div>
-    </div>
-<div class="content">
-    <h1 id="name">
-        Hello, My name is Peter Flockhart
-    </h1>
+    <div class="content">
+        <h1 id="name">
+            Hello, My name is Peter Flockhart
+        </h1>
 
-    <p>
+        <p>
         At the moment, my favorite Wikipedia articles are <a class="link" href="http://en.wikipedia.org/wiki/Heat_death_of_the_universe"><span class="italics">this</span></a> and <a class="link" href="https://en.wikipedia.org/wiki/Tetris_effect"><span class="italics">this</span></a>
-    </p>
-    <br>
-    <br>
-    <div class="images">
-    <img id="portrait" src="./Images/noodle_glitch_small.gif" alt="My Visage">
+        </p>
+        <br>
+        <br>
+        <div class="images">
+            <img id="portrait" src="./Images/noodle_glitch_small.gif" alt="My Visage">
 
-    <!-- <a href="https://en.wikipedia.org/wiki/Platypus">
+            <!-- <a href="https://en.wikipedia.org/wiki/Platypus">
         <img id="platypus" src="./Images/platypussilhouette.jpg" width="216" height="216" alt="Best Animal"></a>
     </p>-->
 
 
-    <!--<p>That's a pretty good one, too</p>-->
-<br>
-<br>
-    <h2>
-        <a id="twitter-link" href="https://twitter.com/FreshPeter_"> @P.Flock</a>
-    </h2>
+            <!--<p>That's a pretty good one, too</p>-->
+            <br>
+            <br>
+            <h2>
+                <a id="twitter-link" href="https://twitter.com/FreshPeter_"> @FreshPeter_</a>
+            </h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="chart_title">Daily Caffeine Intake over the last 30 Days</h2>
+    <div id="caffeine">
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="coffeelog.js"></script>
+        <script src='chart.js'></script>
 
+        <svg class="chart">
+        </svg>
+        <div id="stats">
+            <div class="stat_text">Current Mg in Bloodstream:</div>
+            <div class="stat_text" id="Current_mg"></div>
+            <div class="stat_text">Average Daily Intake:</div>
+            <div class="stat_text" id="Average_mg"></div>
+        </div>
+    </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <!--<div id="container">-->
-    <!--<div id="footer-content">-->
-    <!--</div>-->
+<!--<div id="footer-content">-->
+<!--</div>-->
 <!--</div>-->
 <!--<div id="footer">
     <a class="link" href="https://github.com/p-flock">Check me out on GitHub!</a>
