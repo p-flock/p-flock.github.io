@@ -52,7 +52,7 @@ window.onload = function () {
         .attr("y", 6)
         .attr("dy", "1em")
         .style("text-anchor", "end")
-        .text("Mg of Caffeine");
+        .text("mg of Caffeine");
 
     g.append("rect")
         .attr("y", function (d) { return y(d);})
@@ -67,8 +67,8 @@ window.onload = function () {
         .attr("x", barWidth / 2)
         .attr("dy", ".75em");
 
-document.getElementById("Current_mg").innerHTML = String(getCurrentBloodMg(data.data)) + 'Mg';
-document.getElementById("Average_mg").innerHTML = String(Math.round(d3.sum(days) / days.length)) + 'Mg';
+document.getElementById("Current_mg").innerHTML = String(getCurrentBloodMg(data.data)) + 'mg';
+document.getElementById("Average_mg").innerHTML = String(Math.round(d3.sum(days) / days.length)) + 'mg';
 
 
     //chart.append("g")

@@ -181,6 +181,7 @@ body > #container { height: auto; min-height: 100%; }
     /*display: inline-block;*/
     float: left;
     margin: auto;
+    margin-left: 5%;
     margin-bottom: 100px;
 }
 
@@ -224,19 +225,27 @@ rect {
     opacity: 0.5;
 }
 #stats {
-    top-margin: 50%;
+    margin-top: 15%;
     float: left;
+    margin-left: 40px;
     /*display: inline-block;*/
 }
 .stat_text {
     opacity: 0.5;
+    margin-top: 10px;
     /*font: 90px;*/
 }
 #caffeine {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     text-align: center;
 }
 #Current_mg, #Average_mg {
     font-weight: bold;
     color: rgba(0,0, 255, 1);
     opacity: 0.5;
+    font-size: 2em;
 }
+
+
