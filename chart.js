@@ -88,6 +88,11 @@ document.getElementById("Average_mg").innerHTML = String(Math.round(d3.sum(days)
 
 }
 
+window.setInterval(function() {
+    document.getElementById("Current_mg").innerHTML = String(Math.round(getCurrentBloodMg(data.data) * 100) / 100) + 'mg';
+}, 1000);
+
+
 // Get current mg of caffeine in the blood
 // Assuming half life is 6 hours, we calculate
 // A' = A * 2^(-t/h)
@@ -98,7 +103,7 @@ var getRemainingMg = function(mg, startTime) {
   timeElapsed = nowSeconds - startTime;
   sixHours = 60 * 60 * 60;
   remainingMg = mg * Math.pow(2, (-1 * timeElapsed/sixHours));
-  remainingMg = Math.round(remainingMg);
+  remainingMg = Math.round(remainingMg * 100) / 100;
   console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
   return remainingMg;
 }
