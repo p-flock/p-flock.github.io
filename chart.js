@@ -101,7 +101,7 @@ window.setInterval(function() {
 var getRemainingMg = function(mg, startTime) {
   nowSeconds = (new Date).getTime() / 1000.0;
   timeElapsed = nowSeconds - startTime;
-  sixHours = 60 * 60 * 60;
+  sixHours = 6 * 60 * 60;
   remainingMg = mg * Math.pow(2, (-1 * timeElapsed/sixHours));
   remainingMg = Math.round(remainingMg * 100) / 100;
   console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
