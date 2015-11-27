@@ -63,7 +63,7 @@ window.onload = function () {
     g.append("text")
         //.text(function(d) { return coffee_emoji})
         .text(function(d) {return (d) ? String(d): '';})
-        .attr("y", function (d) {return y(d) - 20} )
+        .attr("y", function (d) {return y(d) - 12} )
         .attr("x", (barWidth / 2) + 2)
         .attr("dy", ".75em");
 
