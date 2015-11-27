@@ -104,7 +104,7 @@ var getRemainingMg = function(mg, startTime) {
   sixHours = 6 * 60 * 60;
   remainingMg = mg * Math.pow(2, (-1 * timeElapsed/sixHours));
   remainingMg = Math.round(remainingMg * 100) / 100;
-  console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
+  //console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
   return remainingMg;
 }
 
@@ -115,7 +115,7 @@ var getCurrentBloodMg = function(data) {
 }
 
 var groupDays = function(data) {
-    console.log(data.length + " items in data");
+    //console.log(data.length + " items in data");
     var currentDate = (new Date).getTime() / 1000.0;
     var secondsInDay = 60 * 60 * 24;
     var last30Days = [];
@@ -125,7 +125,7 @@ var groupDays = function(data) {
     for (var i = 0; i < data.length; i++) {
         var daysAgo = (currentDate - data[i].date) / secondsInDay;
         var daysAgo = Math.round(daysAgo);
-        console.log(daysAgo + " days");
+        //console.log(daysAgo + " days");
         if (daysAgo < 30) {
             last30Days[29 - daysAgo] += data[i].mg;
         }
