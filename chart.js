@@ -35,7 +35,7 @@ window.onload = function () {
     .data(days)
     .enter()
     .append('g')
-    .attr("transform", function(d,i) { return "translate("+ i * barWidth + ", 0)";})
+    .attr("transform", function(d,i) { return "translate("+ ((i * barWidth) + 7) + ", 0)";})
     .attr("class", "day");
     //.attr('height', function(d) {return (d.mg) + 'px'; })
     //.attr("width", "9px");
