@@ -32,11 +32,11 @@ window.onload = function () {
         .orient("left");
 
     var g = chart.selectAll("g")
-    .data(days)
-    .enter()
-    .append('g')
-    .attr("transform", function(d,i) { return "translate("+ ((i * barWidth) + 7) + ", 0)";})
-    .attr("class", "day");
+        .data(days)
+        .enter()
+        .append('g')
+        .attr("transform", function(d,i) { return "translate("+ ((i * barWidth) + 7) + ", 0)";})
+        .attr("class", "day");
     //.attr('height', function(d) {return (d.mg) + 'px'; })
     //.attr("width", "9px");
     chart.append("g")
@@ -47,7 +47,7 @@ window.onload = function () {
     chart.append("g")
         .attr("class", "axis")
         .call(yAxis)
-    .append("text")
+        .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 6)
         .attr("dy", "1em")
@@ -67,24 +67,24 @@ window.onload = function () {
         .attr("x", (barWidth / 2) + 2)
         .attr("dy", ".75em");
 
-document.getElementById("Current_mg").innerHTML = String(getCurrentBloodMg(data.data)) + 'mg';
-document.getElementById("Average_mg").innerHTML = String(Math.round(d3.sum(days) / days.length)) + 'mg';
+    document.getElementById("Current_mg").innerHTML = String(getCurrentBloodMg(data.data)) + 'mg';
+    document.getElementById("Average_mg").innerHTML = String(Math.round(d3.sum(days) / days.length)) + 'mg';
 
 
     //chart.append("g")
-        //.attr("class", "x axis")
-        //.attr("transform", "translate(0," + height + ")")
-        //.call(xAxis);
+    //.attr("class", "x axis")
+    //.attr("transform", "translate(0," + height + ")")
+    //.call(xAxis);
 
-      //chart.append("g")
-          //.attr("class", "y axis")
-          //.call(yAxis);
+    //chart.append("g")
+    //.attr("class", "y axis")
+    //.call(yAxis);
 
     // PLACES BAR CORRESPONDING TO REMAINING MG FROM EACH INDIVIDUAL DOSE
     //g.append("rect")
-        //.attr("height", function(d, i) {return getRemainingMg(d.mg, d.date)} )
-        //.attr("width", barWidth - 10)
-        //.attr("class", "remaining_amt");
+    //.attr("height", function(d, i) {return getRemainingMg(d.mg, d.date)} )
+    //.attr("width", barWidth - 10)
+    //.attr("class", "remaining_amt");
 
 }
 
@@ -99,19 +99,19 @@ window.setInterval(function() {
 // where A' = amount remaining, A = initial amount
 // t = time elapsed and h = half life
 var getRemainingMg = function(mg, startTime) {
-  nowSeconds = (new Date).getTime() / 1000.0;
-  timeElapsed = nowSeconds - startTime;
-  sixHours = 6 * 60 * 60;
-  remainingMg = mg * Math.pow(2, (-1 * timeElapsed/sixHours));
-  remainingMg = Math.round(remainingMg * 100) / 100;
-  //console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
-  return remainingMg;
+    nowSeconds = (new Date).getTime() / 1000.0;
+    timeElapsed = nowSeconds - startTime;
+    sixHours = 6 * 60 * 60;
+    remainingMg = mg * Math.pow(2, (-1 * timeElapsed/sixHours));
+    remainingMg = Math.round(remainingMg * 100) / 100;
+    //console.log("Caffeing remaining from " + mg  +"mg after " + timeElapsed  +"s :", remainingMg)
+    return remainingMg;
 }
 
 var getCurrentBloodMg = function(data) {
-  return data.reduce(function(prev, datum) {
-    return prev + getRemainingMg(datum.mg, datum.date);
-  }, 0)
+    return data.reduce(function(prev, datum) {
+        return prev + getRemainingMg(datum.mg, datum.date);
+    }, 0)
 }
 
 var groupDays = function(data) {
@@ -120,7 +120,7 @@ var groupDays = function(data) {
     var secondsInDay = 60 * 60 * 24;
     var last30Days = [];
     for (var i = 0; i< 30; i++) {
-       last30Days[i] = 0;
+        last30Days[i] = 0;
     }
     for (var i = 0; i < data.length; i++) {
         var daysAgo = (currentDate - data[i].date) / secondsInDay;
