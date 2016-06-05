@@ -959,5 +959,9 @@ var data = {
         "date": 1465150822.438889,
         "mg": 160,
         "format": "cappuccino"
+    }, {
+        "date": 1465152792.614597,
+        "mg": 0,
+        "format": "test"
     }]
 }
