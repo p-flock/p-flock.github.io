@@ -133,16 +133,3 @@ var groupDays = function(data) {
     return last30Days;
 }
 
-var truncate = function(data) {
-    var currentDate = (new Date).getTime() / 1000.0;
-    var secondsInDay = 60 * 60 * 24;
-    var month = secondsInDay * 30;
-
-    var new_data = data.slice(0);
-    for (var i = 0; i < new_data.length; i++) {
-        if new_data[i].date < currentDate - month {
-           new_data.splice(i, 1);
-        }
-    }
-    return new_data;
-}
