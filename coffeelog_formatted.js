@@ -963,5 +963,13 @@ var data = {
         "date": 1465152792.614597,
         "mg": 0,
         "format": "test"
+    }, {
+        "date": 1465220169.598417,
+        "mg": 200,
+        "format": "coldbrew"
+    }, {
+        "date": 1465220223.765481,
+        "mg": 0,
+        "format": "test"
     }]
 }
