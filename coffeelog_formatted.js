@@ -971,5 +971,17 @@ var data = {
         "date": 1465220223.765481,
         "mg": 0,
         "format": "test"
+    }, {
+        "date": 1465308957.94699,
+        "mg": 200,
+        "format": "coldbrew"
+    }, {
+        "date": 1465395740.039647,
+        "mg": 75,
+        "format": "dirtychai"
+    }, {
+        "date": 1465481286.582371,
+        "mg": 132,
+        "format": "coffee"
     }]
 }

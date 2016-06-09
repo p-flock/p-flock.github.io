@@ -8,8 +8,13 @@ window.onload = function () {
 
     var days = groupDays(data.data);
 
-    var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .1);
+    //var x = d3.scale.ordinal()
+        //.rangeRoundBands([0, width], .1);
+
+    var x = d3.time.scale()
+        .range([width/days.length/2, width-width/days.length/2])
+        .domain([new Date(new Date().getTime() - (60*60*24*30*1000)),new Date(new Date().getTime())])
+        .nice(d3.time.day, 1);
 
     var y = d3.scale.linear()
         .range([height, 0])
@@ -35,7 +40,8 @@ window.onload = function () {
         .data(days)
         .enter()
         .append('g')
-        .attr("transform", function(d,i) { return "translate("+ ((i * barWidth) + 7) + ", 0)";})
+        .attr("transform", function(d,i) { return "translate("+ ((i * barWidth)) + ", 0)";})
+        //.attr("x", function(d,i) {return i - (width/days.length/2);})
         .attr("class", "day");
     //.attr('height', function(d) {return (d.mg) + 'px'; })
     //.attr("width", "9px");
