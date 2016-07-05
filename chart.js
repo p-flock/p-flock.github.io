@@ -8,17 +8,18 @@ window.onload = function () {
 
     var days = groupDays(data.data);
 
-    var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .1);
+    //var x = d3.scale.ordinal()
+        //.rangeRoundBands([0, width], .1);
 
-    //var x = d3.time.scale()
-        //.range([width/days.length/2, width-width/days.length/2])
-        //.domain([new Date(new Date().getTime() - (60*60*24*30*1000)),new Date(new Date().getTime())])
-        //.nice(d3.time.day, 1);
+    var x = d3.time.scale()
+        .range([0, width])
+        .domain([new Date(new Date().getTime() - (60*60*24*31*1000)),new Date(new Date().getTime() + (24*60*60*1000))])
+        .nice(d3.time.day, 1);
 
     var y = d3.scale.linear()
         .range([height, 0])
-        .domain([0, d3.max(days)]);
+        //.domain([0, d3.max(days)]);
+        .domain([0, d3.max(days, function(d) {return d.mg;})])
 
     var chart = d3.select(".chart")
         .attr("width", width + margin.left + margin.right)
@@ -26,7 +27,7 @@ window.onload = function () {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var barWidth = width / days.length;
+    var barWidth = width / (days.length + 2);
 
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -40,11 +41,8 @@ window.onload = function () {
         .data(days)
         .enter()
         .append('g')
-        .attr("transform", function(d,i) { return "translate("+ ((i * barWidth)+2) + ", 0)";})
-        //.attr("x", function(d,i) {return i - (width/days.length/2);})
+        .attr("x", function (d) {return x(new Date(d.date));})
         .attr("class", "day");
-    //.attr('height', function(d) {return (d.mg) + 'px'; })
-    //.attr("width", "9px");
     chart.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0," + height + ")")
@@ -61,16 +59,18 @@ window.onload = function () {
         .text("mg of Caffeine");
 
     g.append("rect")
-        .attr("y", function (d) { return y(d);})
-        .attr("height", function(d, i){ console.log(height - y(d)); return height - y(d);})
+        .attr("x", function (d) {return x(new Date(d.date) - barWidth/2);})
+        .attr("y", function (d) { return y(d.mg);})
+        .attr("height", function(d, i){return height - y(d.mg);})
         .attr("width", barWidth - 7)
         .attr("class", "bar");
 
     g.append("text")
         //.text(function(d) { return coffee_emoji})
-        .text(function(d) {return (d) ? String(d): '';})
-        .attr("y", function (d) {return y(d) - 12} )
-        .attr("x", (barWidth / 2) + 2)
+        .text(function(d) {return (d.mg) ? String(d.mg): '';})
+        .attr("x", function (d) { x(new Date(d.date))})
+        //.attr("x", function (d) { return g.x;})
+        .attr("y", function (d) {return y(d.mg) - 12} )
         .attr("dy", ".75em");
 
     document.getElementById("Current_mg").innerHTML = String(getCurrentBloodMg(data.data)) + 'mg';
@@ -122,18 +122,18 @@ var getCurrentBloodMg = function(data) {
 
 var groupDays = function(data) {
     //console.log(data.length + " items in data");
-    var currentDate = (new Date).getTime() / 1000.0;
-    var secondsInDay = 60 * 60 * 24;
+    var currentDate = (new Date).getTime();
+    var secondsInDay = 60 * 60 * 24 * 1000;
     var last30Days = [];
     for (var i = 0; i< 30; i++) {
-        last30Days[i] = 0;
+        last30Days[i] = {"mg": 0, "date": new Date(currentDate - (secondsInDay * 29) + (secondsInDay * i))};
     }
     for (var i = 0; i < data.length; i++) {
-        var daysAgo = (currentDate - data[i].date) / secondsInDay;
+        var daysAgo = (currentDate - (data[i].date * 1000)) / secondsInDay;
         var daysAgo = Math.round(daysAgo);
         //console.log(daysAgo + " days");
         if (daysAgo < 30) {
-            last30Days[29 - daysAgo] += data[i].mg;
+            last30Days[29 - daysAgo].mg = data[i].mg + last30Days[29-daysAgo].mg;
         }
     }
     return last30Days;
