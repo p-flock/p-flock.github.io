@@ -99,7 +99,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -155,7 +155,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -183,7 +183,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -211,7 +211,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -239,7 +239,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -295,7 +295,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -323,7 +323,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -351,7 +351,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -379,7 +379,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -435,7 +435,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -463,7 +463,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -491,7 +491,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -519,7 +519,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -603,7 +603,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -631,7 +631,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>486</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -659,7 +659,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -687,7 +687,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>486</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -743,7 +743,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -771,7 +771,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>486</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -799,7 +799,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -827,7 +827,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>486</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -911,7 +911,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -939,7 +939,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>310</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -995,7 +995,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -1023,7 +1023,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
@@ -1107,7 +1107,7 @@
             </LatLonAltBox>
             <Lod>
               <minLodPixels>512</minLodPixels>
-              <maxLodPixels>-1</maxLodPixels>
+              <maxLodPixels>0</maxLodPixels>
             </Lod>
           </Region>
           <GroundOverlay>
